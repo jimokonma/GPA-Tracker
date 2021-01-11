@@ -12,73 +12,7 @@ code {
     monospace;
 }
 
-// .App {
-//   display: flex;
-//   flex-direction: column;
-//   .left-container {
-//     padding: 10px;
-//     flex: 1;
-//     display: grid;
-//     grid-template-columns: repeat(4, 1fr);
-//     input {
-//       width: 30px;
-//       border: 1px solid rgb(223, 223, 223);
-//     }
-//   }
-//   .container {
-//     flex: 3;
-//     padding: 10px;
-//     display: grid;
-//     .box {
-//       display: flex;
-//     }
-//     input,
-//     select {
-//       border: 1px solid rgb(223, 223, 223);
-//       border-top: none;
-//       background: none;
-//       margin: 0px 5px;
-//     }
-//     input {
-//       width: 30px;
-//     }
-//     input:nth-child(1) {
-//       width: 80px;
-//     }
-//     button {
-//       width: 10px;
-//       border: none;
-//       background: none;
-//     }
-//     .cal {
-//       width: 120px;
-//       padding: 3px;
-//       margin: 5px;
-//       background: rgb(28, 113, 192);
-//       color: rgb(248, 248, 248);
-//       border-radius: 3px;
-//     }
-//     .add-btn,
-//     .del-btn {
-//       width: 20px;
-//       height: 20px;
-//       border-radius: 100%;
-//       padding: 0px 1px 1px 0px;
-//       color: rgb(248, 248, 248);
-//       margin: 0px 4px;
-//     }
-//     .add-btn {
-//       background: rgb(28, 192, 55);
-//     }
-//     .del-btn {
-//       background: rgb(216, 15, 15);
-//     }
-//   }
-//   .right-container {
-//     flex: 1;
-//     padding: 10px;
-//     h1 {
-//       font-size: 60px;
-//     }
-//   }
-// }
+a {
+  text-decoration: none;
+  color: white;
+}
