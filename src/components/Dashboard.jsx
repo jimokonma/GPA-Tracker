@@ -8,6 +8,7 @@ import {
   CardContent,
   Typography,
   Container,
+  IconButton,
 } from "@material-ui/core";
 import { Delete } from "@material-ui/icons";
 import { Alert } from "@material-ui/lab";
@@ -101,10 +102,9 @@ const Dashboard = () => {
             })}
             <Typography variant="h6">GPA: {data.gpa}</Typography>
             <Button
-              startIcon={
-                <Delete color="secondary" style={{ float: "right" }} />
-              }
+              startIcon={<Delete color="secondary" />}
               onClick={() => handleDelete(data._id)}
+              style={{ float: "right" }}
             ></Button>
           </CardContent>
         </Card>
@@ -114,7 +114,9 @@ const Dashboard = () => {
   return (
     <div>
       <Container style={{ marginTop: 60 }}>
-        <Typography variant="h3">Dashboard</Typography>
+        <Typography variant="h3" style={{ margin: "0px auto" }}>
+          Dashboard
+        </Typography>
         {status}
         <Grid container justify="center">
           <Grid item lg={8} xs={12}>
@@ -137,9 +139,9 @@ const Dashboard = () => {
                 }}
               />
             ) : (
-              <Typography variant="h4">
+              <Typography variant="subtitle1">
                 {" "}
-                <i>No chart data </i>{" "}
+                <i style={{ margin: "0px auto" }}>No chart data </i>{" "}
               </Typography>
             )}
           </Grid>

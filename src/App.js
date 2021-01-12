@@ -6,20 +6,32 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
+import DashboardIcon from "@material-ui/icons/Dashboard";
+import { Grid } from "@material-ui/core";
 function App() {
   return (
     <div>
       <Router>
-        <AppBar color="primary">
+        <AppBar color="primary" position="static">
           <Toolbar>
-            <Link to="/">
-              <Typography variant="h6">CGP Tracker</Typography>
-            </Link>
-            <Link to="/dashboard">
-              <Button variant="text" color={"secondary"}>
-                Dashboard
-              </Button>
-            </Link>
+            <Grid container justify="space-evenly" style={{ width: "80%" }}>
+              <Grid item>
+                <Link to="/">
+                  <Typography variant="h6">CGP Tracker</Typography>
+                </Link>
+              </Grid>
+            </Grid>
+            <Grid item>
+              <Link to="/dashboard">
+                <Button
+                  variant="text"
+                  startIcon={<DashboardIcon />}
+                  style={{ color: "white" }}
+                >
+                  Dashboard
+                </Button>
+              </Link>
+            </Grid>
           </Toolbar>
         </AppBar>
         <Route exact path="/" component={CgpTracker} />

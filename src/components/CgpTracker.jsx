@@ -14,6 +14,7 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import { Alert } from "@material-ui/lab";
 import axios from "axios";
+import { ButtonGroup } from "@material-ui/core";
 
 function App() {
   // Grade Points State
@@ -195,6 +196,35 @@ function App() {
         setGpa("");
       }
   };
+  // Grade Value
+  const setGradeValue5 = () => {
+    setGradePoint({
+      A: 5.0,
+      An: 4.7,
+      Bp: 4.3,
+      B: 4.0,
+      Bn: 3.7,
+      Cp: 3.3,
+      C: 3.0,
+      Cn: 2.7,
+      D: 2.3,
+      F: 0,
+    });
+  };
+  const setGradeValue4 = () => {
+    setGradePoint({
+      A: 4.0,
+      An: 3.67,
+      Bp: 3.33,
+      B: 3.0,
+      Bn: 2.67,
+      Cp: 2.33,
+      C: 2,
+      Cn: 1.67,
+      D: 1,
+      F: 0,
+    });
+  };
   // map gpa inputs text/option
   const List = inputList.map((val, index) => {
     return (
@@ -268,6 +298,14 @@ function App() {
     <div className="App">
       <Container maxWidth="md" style={{ marginTop: 70 }}>
         <Typography>Grade Range</Typography>
+        <ButtonGroup>
+          <Button variant="contained" color="primary" onClick={setGradeValue5}>
+            5
+          </Button>
+          <Button variant="contained" onClick={setGradeValue4}>
+            4
+          </Button>
+        </ButtonGroup>
         {/* Grade point text input */}
         <Card>
           <CardContent>
