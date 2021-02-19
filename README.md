@@ -6,6 +6,7 @@ This application helps students calculate and track their GPA
 # Usage
 - Select max GPA 
 - Enter course title
-- Enter points and score 
+- Enter points 
+- Enter score 
 
 
