@@ -8,5 +8,6 @@ This application helps students calculate and track their GPA
 - Enter course title
 - Enter points 
 - Enter score 
+- Click on Calculate
 
 
