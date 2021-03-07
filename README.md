@@ -1,7 +1,7 @@
 # GPA tracker with MERN Stack
 
 # Description
-This application helps students calculate and track their GPA  
+This application is used to calculate and track GPA  
 
 # Usage
 - Select max GPA 
